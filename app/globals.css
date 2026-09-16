@@ -1,33 +1,5 @@
 @import "tailwindcss";
-
-@theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --color-background: oklch(1 0 0);
-  --color-foreground: oklch(0.145 0 0);
-  --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.145 0 0);
-  --color-primary: oklch(0.205 0 0);
-  --color-primary-foreground: oklch(0.985 0 0);
-  --color-secondary: oklch(0.97 0 0);
-  --color-secondary-foreground: oklch(0.205 0 0);
-  --color-muted: oklch(0.97 0 0);
-  --color-muted-foreground: oklch(0.556 0 0);
-  --color-accent: oklch(0.97 0 0);
-  --color-accent-foreground: oklch(0.205 0 0);
-  --color-destructive: oklch(0.577 0.245 27.325);
-  --color-border: oklch(0.922 0 0);
-  --color-input: oklch(0.922 0 0);
-  --color-ring: oklch(0.708 0 0);
-  --radius: 0.5rem;
-}
-
-@layer base {
-  * {
-    border-color: var(--color-border);
-  }
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-  }
-}
+@theme { --font-sans: var(--font-dm), sans-serif; --font-display: var(--font-space), sans-serif; --color-brand:#b55239; --color-surface:#f5f1ed; --color-ink:#2a2a2a; --color-sage:#8b9a7c; --radius:.375rem; }
+@layer base { *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#f5f1ed;color:#2a2a2a;font-family:var(--font-dm),sans-serif} button,a{cursor:pointer} }
+@layer components { .eyebrow{margin-bottom:.75rem;font-family:ui-monospace,monospace;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#77736d}.section-title{font-family:var(--font-space),sans-serif;font-size:clamp(2.35rem,5vw,4.5rem);font-weight:700;line-height:.95;letter-spacing:-.045em;text-transform:uppercase}.filter-label{margin-bottom:.6rem;display:block;font-family:ui-monospace,monospace;font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase} }
+.paper::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}.hide-scrollbar{scrollbar-width:none}.hide-scrollbar::-webkit-scrollbar{display:none}
